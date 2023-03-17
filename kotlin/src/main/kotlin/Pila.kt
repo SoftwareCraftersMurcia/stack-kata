@@ -1,4 +1,5 @@
 class Pila {
+    private var _peek: Int? = null
     var tamanio = 0
     fun size() : Int {
         return tamanio
@@ -10,9 +11,10 @@ class Pila {
 
     fun push(numero : Int) {
         tamanio++
+        this._peek = numero
     }
 
     fun peek(): Int? {
-        return null
+        return _peek
     }
 }

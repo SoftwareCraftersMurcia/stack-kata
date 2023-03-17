@@ -28,5 +28,12 @@ class ExampleTest {
         Assertions.assertNull(miPila.peek())
     }
 
+    @Test
+    fun `peek of a pile with one element returns the pushed element`() {
+        val miPila = Pila()
+        miPila.push(1)
+        Assertions.assertEquals(1, miPila.peek())
+    }
+
 
 }
