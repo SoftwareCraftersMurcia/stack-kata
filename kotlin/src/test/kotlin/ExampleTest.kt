@@ -17,4 +17,10 @@ class ExampleTest {
         Assertions.assertEquals(true,miPila.emptyCheck())
     }
 
+    @Test
+    fun push(){
+        val miPila = Pila()
+        miPila.push(1)
+        Assertions.assertEquals(1,miPila.size())
+    }
 }
