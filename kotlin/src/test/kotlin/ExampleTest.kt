@@ -6,11 +6,15 @@ import org.junit.jupiter.api.TestFactory
 class ExampleTest {
 
     @Test
-    fun change_me_first() {
+    fun sizeTest() {
         val miPila = Pila()
         Assertions.assertEquals(0, miPila.size())
     }
 
-
+    @Test
+    fun emptyCheckTest(){
+        val miPila = Pila()
+        Assertions.assertEquals(true,miPila.emptyCheck())
+    }
 
 }
