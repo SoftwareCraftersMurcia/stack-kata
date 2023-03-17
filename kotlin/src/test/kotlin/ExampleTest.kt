@@ -35,5 +35,10 @@ class ExampleTest {
         Assertions.assertEquals(1, miPila.peek())
     }
 
+    @Test
+    fun `pop of an empty pìle returns null`() {
+        val miPila = Pila()
+        Assertions.assertNull(miPila.pop())
+    }
 
 }
