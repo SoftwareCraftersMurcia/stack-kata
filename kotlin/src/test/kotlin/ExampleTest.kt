@@ -41,4 +41,11 @@ class ExampleTest {
         Assertions.assertNull(miPila.pop())
     }
 
+    @Test
+    fun `pop of a pìle with an element returns the element and left the pile empty`() {
+        val miPila = Pila()
+        miPila.push(8)
+        Assertions.assertEquals(8,miPila.pop())
+    }
+
 }

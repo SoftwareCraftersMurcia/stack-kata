@@ -19,6 +19,7 @@ class Pila {
     }
 
     fun pop(): Int? {
-        return null
+        return _peek
     }
+
 }
