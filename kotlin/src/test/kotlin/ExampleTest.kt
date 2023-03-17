@@ -18,9 +18,17 @@ class ExampleTest {
     }
 
     @Test
-    fun push(){
+    fun pushTest(){
         val miPila = Pila()
         miPila.push(1)
         Assertions.assertEquals(1,miPila.size())
     }
+
+    @Test
+    fun peekTest(){
+        val miPila = Pila()
+        Assertions.assertNull(miPila.peek())
+    }
+
+
 }

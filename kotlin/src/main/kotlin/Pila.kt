@@ -11,4 +11,8 @@ class Pila {
     fun push(numero : Int) {
         tamanio++
     }
+
+    fun peek(): Int? {
+        return null
+    }
 }
